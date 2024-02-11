@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Wishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #wishes {
+            display: none;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body onload="displayWishes()">
+
+<h1>Happy Birthday, <span id="girlfriendName">Sharanya</span>!</h1>
+
+<div id="wishes">
+    <p id="english"></p>
+    <p id="hindi"></p>
+    <p id="spanish"></p>
+    <p id="french"></p>
+    <p id="german"></p>
+    <p id="italian"></p>
+    <p id="portuguese"></p>
+    <p id="russian"></p>
+    <p id="chinese"></p>
+    <p id="japanese"></p>
+    <p id="korean"></p>
+    <p id="arabic"></p>
+    <p id="dutch"></p>
+    <p id="swedish"></p>
+    <p id="turkish"></p>
+    <p id="hebrew"></p>
+    <p id="greek"></p>
+    <p id="polish"></p>
+    <p id="vietnamese"></p>
+</div>
+
+<script>
+    var wishes = {
+        'english': 'Happy Birthday, ',
+        'hindi': 'जन्मदिन मुबारक हो, ',
+        'spanish': '¡Feliz Cumpleaños, ',
+        'french': 'Joyeux Anniversaire, ',
+        'german': 'Alles Gute zum Geburtstag, ',
+        'italian': 'Buon Compleanno, ',
+        'portuguese': 'Feliz Aniversário, ',
+        'russian': 'С Днём Рождения, ',
+        'chinese': '生日快乐，',
+        'japanese': 'お誕生日おめでとうございます、',
+        'korean': '생일 축하해요, ',
+        'arabic': 'عيد ميلاد سعيد، ',
+        'dutch': 'Gefeliciteerd met je verjaardag, ',
+        'swedish': 'Grattis på födelsedagen, ',
+        'turkish': 'Doğum Günün Kutlu Olsun, ',
+        'hebrew': 'יומולדת שמח, ',
+        'greek': 'Χαρούμενα Γενέθλια, ',
+        'polish': 'Wszystkiego Najlepszego z Okazji Urodzin, ',
+        'vietnamese': 'Chúc Mừng Sinh Nhật, '
+    };
+
+    var girlfriendName = 'Sharanya';
+
+    function displayWishes() {
+        var wishesDiv = document.getElementById('wishes');
+        wishesDiv.style.display = 'block';
+
+        document.getElementById('english').innerHTML = wishes['english'] + girlfriendName + '!';
+        document.getElementById('hindi').innerHTML = wishes['hindi'] + girlfriendName + '!';
+        document.getElementById('spanish').innerHTML = wishes['spanish'] + girlfriendName + '!';
+        document.getElementById('french').innerHTML = wishes['french'] + girlfriendName + '!';
+        document.getElementById('german').innerHTML = wishes['german'] + girlfriendName + '!';
+        document.getElementById('italian').innerHTML = wishes['italian'] + girlfriendName + '!';
+        document.getElementById('portuguese').innerHTML = wishes['portuguese'] + girlfriendName + '!';
+        document.getElementById('russian').innerHTML = wishes['russian'] + girlfriendName + '!';
+        document.getElementById('chinese').innerHTML = wishes['chinese'] + girlfriendName + '!';
+        document.getElementById('japanese').innerHTML = wishes['japanese'] + girlfriendName + '!';
+        document.getElementById('korean').innerHTML = wishes['korean'] + girlfriendName + '!';
+        document.getElementById('arabic').innerHTML = wishes['arabic'] + girlfriendName + '!';
+        document.getElementById('dutch').innerHTML = wishes['dutch'] + girlfriendName + '!';
+        document.getElementById('swedish').innerHTML = wishes['swedish'] + girlfriendName + '!';
+        document.getElementById('turkish').innerHTML = wishes['turkish'] + girlfriendName + '!';
+        document.getElementById('hebrew').innerHTML = wishes['hebrew'] + girlfriendName + '!';
+        document.getElementById('greek').innerHTML = wishes['greek'] + girlfriendName + '!';
+        document.getElementById('polish').innerHTML = wishes['polish'] + girlfriendName + '!';
+        document.getElementById('vietnamese').innerHTML = wishes['vietnamese'] + girlfriendName + '!';
+    }
+</script>
+
+</body>
+</html>
